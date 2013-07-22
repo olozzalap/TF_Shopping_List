@@ -14,14 +14,19 @@
 	<h1>Shopping List</h1>
 	</header>
 	<br/>
-	<h3>Current Items:</h3>
+	<span id="current_items_heading">Current Items:</span>
 	<div id="list_container">
-		<div class="list_entry">New stereo</div>
+		<div class="list_entry">New stereo
+			<form name="list_entry_checkbox">
+				<input type="checkbox">
+			</form>
+		</div>
 	</div>
-	<h3>Add an item:</h3>
+
+	<span id="add_items_heading">Add an item:</span>
 	<form onsubmit="" name="add_items_form">
 		<input type="text">
-		<input type="submit">
+		<input type="submit" value="Add">
 	</form>
 
 
