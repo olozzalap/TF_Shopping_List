@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Welcome to your Shopping List!</title>
+<title>Your Shopping List!</title>
 <link rel="stylesheet" type="text/css" href="reset.css">
 <link rel="stylesheet" type="text/css" href="main.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -24,8 +24,8 @@
 	</div>
 
 	<span id="add_items_heading">Add an item:</span>
-	<form onsubmit="" name="add_items_form">
-		<input type="text">
+	<form onsubmit="return add_item()" name="add_items_form">
+		<input type="text" name="item" id="add_items_input">
 		<input type="submit" value="Add">
 	</form>
 
