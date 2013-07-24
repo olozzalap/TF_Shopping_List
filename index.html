@@ -13,21 +13,28 @@
 	<header>
 	<h1>Shopping List</h1>
 	</header>
-	<br/>
 	<span id="current_items_heading">Current Items:</span>
 	<div id="list_container">
-		<div class="list_entry">New stereo
-			<form name="list_entry_checkbox">
-				<input type="checkbox">
+		<div class="list_entry" id="list_entry_0">New stereo
+			<form name="list_entry_checkbox_0">
+				<input type="checkbox" name="checkbox" class="checkbox">
 			</form>
 		</div>
 	</div>
 
+	<div id="remove_selected">
+		<span id="remove_selected_text">Remove selected?</span>
+	</div>
+
 	<span id="add_items_heading">Add an item:</span>
-	<form onsubmit="return add_item()" name="add_items_form">
-		<input type="text" name="item" id="add_items_input">
+	<form onsubmit="return add_item()" name="add_items_form" id="add_items_form">
+		<input type="text" name="item" placeholder="What do you need to get?" size="24" autocomplete="off" id="add_items_entry">
 		<input type="submit" value="Add">
 	</form>
+
+	<div id="error">
+		Please enter something above!
+	</div>
 
 
 

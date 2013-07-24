@@ -9,9 +9,7 @@ html, body {
 	background-color:#ecf0f1;
 	text-align:center;
 	margin: 0 17%;
-	padding: 20px 10px;
 	height:100%;
-	clear:both;
 	box-shadow: 4px 0 4px #293a41, -4px 0 4px #293a41;
 }
 h1 {
@@ -19,7 +17,7 @@ h1 {
 	font-size:320%;
 	font-weight:bold;
 	margin: 0 0 50px 0;
-	padding-top:15px;
+	padding-top:30px;
 }
 #current_items_heading {
 	font-size:200%;
@@ -35,13 +33,51 @@ h1 {
 	display:inline-block;
 	background-color:#bdc3c7;
 	height:40px;
-	width:200px;
+	min-width:70px;
+	max-width:auto;
 	border: solid 1px #E5E5E5;
-	border-radius:8px;
+	border-radius:6px;
 	margin:0 4.5% 50px 5px;
-	font-size:120%;
-	padding-top:10px;
+	font-size:107%;
+	padding:10px 3px 0 3px;
 }
 #add_items_heading {
+	display:inline-block;
+	float:left;
+	margin:35px 5px 20px 25%;
 	font-size:200%;
+}
+#add_items_form {
+	margin: 35px 25% 0 0;
+}
+input {
+	font-size:110%;
+}
+#add_items_entry {
+	border-radius:4px;
+}
+#error {
+	display:none;
+	height:50px;
+	width:280px;
+	background-color:#e74c3c;
+	border-radius:6px;
+	border: solid 1px #E5E5E5;
+	font-size:145%;
+	color:white;
+	margin:25px 5px 5px 45%;
+}
+#remove_selected {
+	background-color:#F1C40F;
+	height:50px;
+	width:280px;
+	border-radius:6px;
+	font-size:160%;
+	color:white;
+	margin:25px 60px 35px 0;
+	float:right;
+}
+#remove_selected_text {
+	display:inline-block;
+	margin-top:10px;
 }
